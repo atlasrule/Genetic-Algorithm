@@ -194,13 +194,6 @@ def genetic_model(initial_population = None,
   print('Overall Best Fitness: {}, {}'.format(str.rjust(str(overall_best_fitness), 3), str.rjust(str(overall_best_individual), 3)))
 
 
-def binary(binary_array):
-  output = 0
-  for index, digit in enumerate(reversed(binary_array)):
-    output += digit * 2**(index)
-  return output
-
-
 
 # ----- Exemplary Fitness Function -----
 def fitness(individual):
